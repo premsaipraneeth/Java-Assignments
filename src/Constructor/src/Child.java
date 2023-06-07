@@ -1,3 +1,7 @@
+package src.Constructor.src;
+
+import src.Constructor.src.Parent;
+
 public class Child extends Parent {
 
     int b;

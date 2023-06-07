@@ -3,7 +3,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        DepartmentC c = new DepartmentC();
+        DepartmentD c = new DepartmentD();
         c.getDepartmentSize();
         }
     }

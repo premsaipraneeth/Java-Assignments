@@ -1,3 +1,5 @@
+package src.Product;
+
 public class Product {
     double price = 10.0;
 

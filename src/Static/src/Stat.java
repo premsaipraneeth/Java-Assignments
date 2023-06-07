@@ -1,3 +1,5 @@
+package src.Static.src;
+
 public class Stat {
     static int a;
 

@@ -1,4 +1,8 @@
-public class DepartmentC extends Department {
+package src.Abstract;
+
+import src.Abstract.Department2;
+
+public class DepartmentC extends Department2 {
 
     @Override
     public void getDepartmentSize() {
