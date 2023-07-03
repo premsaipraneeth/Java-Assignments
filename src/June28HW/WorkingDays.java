@@ -3,8 +3,6 @@ package main.java.Day19;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
-import java.time.DayOfWeek;
-import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 public class WorkingDaysCalculator {
     public static void main(String[] args) {
