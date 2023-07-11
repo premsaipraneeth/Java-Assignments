@@ -29,10 +29,10 @@ public class ApplicationTest {
     @Test
     public void testPostSubmission() {
         SubmissionForm inputForm = new SubmissionForm();
-        inputForm.setName("John Doe");
-        inputForm.setVendorName("ABC Corp");
-        inputForm.setRate(100);
-        inputForm.setLeadName("Jane Smith");
+        inputForm.setName("Prem");
+        inputForm.setVendorName("K-Force");
+        inputForm.setRate(80);
+        inputForm.setLeadName("Tejaan");
         inputForm.setTechnology("Java");
 
         when(submissionService.postSubmission(inputForm)).thenAnswer(invocation -> {
@@ -49,10 +49,10 @@ public class ApplicationTest {
         String id = "sampleId";
         SubmissionForm expectedForm = new SubmissionForm();
         expectedForm.setId(id);
-        expectedForm.setName("John Doe");
-        expectedForm.setVendorName("ABC Corp");
-        expectedForm.setRate(100);
-        expectedForm.setLeadName("Jane Smith");
+        expectedForm.setName("Prem");
+        expectedForm.setVendorName("K-Force");
+        expectedForm.setRate(80);
+        expectedForm.setLeadName("Tejaan");
         expectedForm.setTechnology("Java");
 
         when(submissionService.getSubmissionFormById(id)).thenReturn(expectedForm);
@@ -64,27 +64,14 @@ public class ApplicationTest {
         verify(submissionService, times(1)).getSubmissionFormById(id);
     }
 
-//    @Test
-//    public void testGetAllSubmissions() {
-//        List<SubmissionForm> expectedList = Arrays.asList(
-//                new SubmissionForm(/* Provide the expected data */),
-//                new SubmissionForm(/* Provide the expected data */)
-//        );
-//        when(submissionService.getallSubmissions()).thenReturn(expectedList);
-//        List<SubmissionForm> resultList = submissionResource.getallSubmissions();
-//
-//        assertEquals(expectedList, resultList);
-//        verify(submissionService, times(1)).getallSubmissions();
-//    }
-
     @Test
     public void testEditSubmission() {
         SubmissionForm inputForm = new SubmissionForm();
         inputForm.setId("sampleId");
-        inputForm.setName("John Doe");
-        inputForm.setVendorName("ABC Corp");
-        inputForm.setRate(100);
-        inputForm.setLeadName("Jane Smith");
+        inputForm.setName("Prem");
+        inputForm.setVendorName("K-Force");
+        inputForm.setRate(80);
+        inputForm.setLeadName("Tejaan");
         inputForm.setTechnology("Java");
 
         when(submissionService.editSubmission(inputForm)).thenAnswer(invocation -> {
@@ -103,8 +90,8 @@ public class ApplicationTest {
         // Arrange
         String id = "sampleId";
         List<SubmissionForm> expectedList = Arrays.asList(
-                new SubmissionForm("John Doe", "ABC Corp", 100, "Jane Smith", "Java"),
-                new SubmissionForm("Jane Doe", "XYZ Corp", 200, "John Smith", "Python")
+                new SubmissionForm("Prem", "K-Force", 80, "Tejaan", "Java"),
+                new SubmissionForm("Akhil", "Tek Systems", 200, "Jagadish", "Full Stack")
         );
 
         when(submissionService.deleteSubmission(id)).thenReturn(expectedList);
